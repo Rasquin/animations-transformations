@@ -1,0 +1,75 @@
+.columna{
+    float: left;
+    width: 100%;
+}
+   div { display: inline-block;}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: #9acd32;
+    text-align: center;
+    transform: translate(5px, 5px);
+    
+    
+}
+
+
+/*Challenge 1*/
+.ball{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #ffa07a;
+    margin-left: 50px;
+    margin-top: 50px;
+    /*transition-property: width, height;*/
+    transition-duration:1s;
+    transition-timing-function: ease-in-out;
+    
+}
+
+.ball:hover{
+    transform: scale(2,2);
+}
+
+/*Challenge 2*/
+
+.spinning{
+    width: 80px;
+    height: 80px;
+    background-color: #ffd700;
+    text-align: center;
+    margin-left: 40px;
+    animation-name: sping;
+    animation-direction: normal;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes sping{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/*Challenge 3*/
+
+.moving {
+    width: 100px;
+    height: 100px;
+    background-color: #00bfff;
+    text-align: center;
+    margin-top: 40px;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+.moving:hover{
+    transform: translateX(100%);
+}
